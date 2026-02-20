@@ -157,7 +157,7 @@ export function Quiz() {
               <button
                 onClick={handleSubmit}
                 disabled={selectedMCQ === null}
-                className="w-full bg-charcoal text-white py-3 rounded-xl hover:bg-slate transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-charcoal text-white py-4 px-4 rounded-xl hover:bg-slate transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base min-h-[52px] active:bg-slate"
               >
                 Submit
               </button>

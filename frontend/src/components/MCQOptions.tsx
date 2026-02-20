@@ -17,7 +17,7 @@ export function MCQOptions({ choices, selectedIndex, onSelect, disabled }: MCQOp
           disabled={disabled}
           whileHover={!disabled ? { scale: 1.02 } : {}}
           whileTap={!disabled ? { scale: 0.98 } : {}}
-          className={`w-full text-left p-3 sm:p-4 rounded-xl border-2 transition-all text-sm sm:text-base ${
+          className={`w-full text-left p-3 sm:p-4 rounded-xl border-2 transition-all text-sm sm:text-base min-h-[48px] ${
             selectedIndex === index
               ? 'border-charcoal bg-charcoal text-white'
               : 'border-gray-300 bg-white hover:border-slate'

@@ -1,7 +1,7 @@
 import type { Deck } from '../types';
 
 export const defaultDeck: Deck = {
-  id: 'theories-practices-deck',
+  id: 'default-deck',
   name: 'Theories & Practices (Urbanism)',
   description:
     'A balanced 40-question deck covering Wright, Le Corbusier, New Capitals, and the City Beautiful Movement.',

@@ -32,7 +32,7 @@ export function FillBlankInput({ value, onChange, onSubmit, disabled, placeholde
         disabled={disabled || !value.trim()}
         whileHover={!disabled && value.trim() ? { scale: 1.02 } : {}}
         whileTap={!disabled && value.trim() ? { scale: 0.98 } : {}}
-        className="w-full bg-charcoal text-white py-3 rounded-xl hover:bg-slate transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+        className="w-full bg-charcoal text-white py-4 rounded-xl hover:bg-slate transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base min-h-[48px] touch-manipulation"
       >
         Submit
       </motion.button>
