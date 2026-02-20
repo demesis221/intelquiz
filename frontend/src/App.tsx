@@ -3,8 +3,11 @@ import { Home } from './pages/Home';
 import { Quiz } from './pages/Quiz';
 import { Results } from './pages/Results';
 import { Decks } from './pages/Decks';
+import { useClearCacheOnInactive } from './hooks/useClearCache';
 
 function App() {
+  useClearCacheOnInactive();
+  
   return (
     <BrowserRouter>
       <Routes>
