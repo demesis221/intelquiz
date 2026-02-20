@@ -1,16 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { copyFileSync } from 'fs'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    {
-      name: 'copy-vercel-json',
-      closeBundle() {
-        copyFileSync('vercel.json', 'dist/vercel.json')
-      }
-    }
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'vercel.json',
+          dest: '.'
+        }
+      ]
+    })
   ],
 })
