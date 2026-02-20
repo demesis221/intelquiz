@@ -4,7 +4,7 @@ const INACTIVITY_TIMEOUT = 30 * 60 * 1000; // 30 minutes
 
 export function useClearCacheOnInactive() {
   useEffect(() => {
-    let inactivityTimer: NodeJS.Timeout;
+    let inactivityTimer: number;
 
     const clearCache = () => {
       localStorage.removeItem('quizResults');
